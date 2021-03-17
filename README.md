@@ -60,4 +60,6 @@ msbuild /m /p:Configuration=Release /p:platform=x64 INSTALL.vcxproj
 
 or open and build OpenCV.sln by Visual Studio.
 
+### License
 
+This software includes the work that is distributed in the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
