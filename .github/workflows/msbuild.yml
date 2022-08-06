@@ -38,7 +38,7 @@ env:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-2022
 
     steps:
     - name: Checkout
@@ -52,7 +52,7 @@ jobs:
       
     - name: Use cmake
       run: |
-        cmake -G "Visual Studio 16 2019" -A ${{ env.ARCH }} -D CMAKE_BUILD_TYPE=${{ env.BUILD_CONFIGURATION }} ${{ env.CMAKE_FLAGS }} -S .\opencv -B .\out
+        cmake -G "Visual Studio 17 2022" -A ${{ env.ARCH }} -D CMAKE_BUILD_TYPE=${{ env.BUILD_CONFIGURATION }} ${{ env.CMAKE_FLAGS }} -S .\opencv -B .\out
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
